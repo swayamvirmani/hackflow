@@ -1,7 +1,7 @@
 
    # 🚀 HackFlow - AI-Powered Hackathon Companion
 
-HackFlow is your ultimate hackathon assistant — an AI-powered platform that helps developers, students, and innovators ideate, pitch, and plan hackathon-ready projects in minutes. Built during a hackathon by Team Binary Brains, this tool streamlines your journey from *"What should we build?"* to *"Let’s ship it!"* — with the help of Google’s Gemini AI.
+HackFlow is your ultimate hackathon assistant — an AI-powered platform that helps developers, students, and innovators ideate, pitch, and plan hackathon-ready projects in minutes— with the help of Google’s Gemini AI.
 
 ---
 
@@ -15,12 +15,6 @@ HackFlow is your ultimate hackathon assistant — an AI-powered platform that he
 
 ---
 
-## 🔥 Live Demo
-
-🌐 **Try it now** → [HackFlow.raghavkatta.xyz](https://HackFlow.raghavkatta.xyz)  
-💻 **GitHub Repo** → [github.com/raghavxkatta/HackFlow-BinaryBrains](https://github.com/raghavxkatta/HackFlow-BinaryBrains)
-
----
 
 ## 🛠️ Tech Stack
 
@@ -47,7 +41,7 @@ HackFlow is your ultimate hackathon assistant — an AI-powered platform that he
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/raghavxkatta/HackFlow-BinaryBrains.git
+git clone https://github.com/swayamvirmani/HackFlow.git
 cd HackFlow-BinaryBrains
 2. Install Dependencies
 bash
@@ -85,14 +79,3 @@ src/
 │   └── generatefromGemini.js
 ├── App.jsx
 ├── main.jsx
-
-🧑‍💻 Contributors
-@raghavxkatta
-@JustPratiyush
-@rainyyyyshrrr12
-@diyashuklaa
-
-
-
-
-Built during Hackstreet Hackathon By Team Binary Brains 💻🔥
