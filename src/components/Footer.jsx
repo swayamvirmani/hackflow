@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-6 py-8">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
-                        <span className="text-xl font-bold text-[#01FF00]">HackYours</span>
+                        <span className="text-xl font-bold text-[#01FF00]">HackFlow</span>
                         <p className="mt-2 text-white/60">
                             AI-powered hackathon idea generator
                         </p>

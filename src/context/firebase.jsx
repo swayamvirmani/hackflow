@@ -15,9 +15,9 @@ import { useNavigate } from 'react-router-dom';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCM8956CqqPCc_332Ole-elpxLIW8h0fJg",
-  authDomain: "hackyours-c4712.firebaseapp.com",
-  projectId: "hackyours-c4712",
-  storageBucket: "hackyours-c4712.firebasestorage.app",
+  authDomain: "HackFlow-c4712.firebaseapp.com",
+  projectId: "HackFlow-c4712",
+  storageBucket: "HackFlow-c4712.firebasestorage.app",
   messagingSenderId: "891692341569",
   appId: "1:891692341569:web:af4da5dd265424585d29c0",
   measurementId: "G-K190V6V0BW"

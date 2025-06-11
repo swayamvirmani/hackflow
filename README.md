@@ -1,7 +1,7 @@
 
-   # 🚀 HackYours - AI-Powered Hackathon Companion
+   # 🚀 HackFlow - AI-Powered Hackathon Companion
 
-HackYours is your ultimate hackathon assistant — an AI-powered platform that helps developers, students, and innovators ideate, pitch, and plan hackathon-ready projects in minutes. Built during a hackathon by Team Binary Brains, this tool streamlines your journey from *"What should we build?"* to *"Let’s ship it!"* — with the help of Google’s Gemini AI.
+HackFlow is your ultimate hackathon assistant — an AI-powered platform that helps developers, students, and innovators ideate, pitch, and plan hackathon-ready projects in minutes. Built during a hackathon by Team Binary Brains, this tool streamlines your journey from *"What should we build?"* to *"Let’s ship it!"* — with the help of Google’s Gemini AI.
 
 ---
 
@@ -17,8 +17,8 @@ HackYours is your ultimate hackathon assistant — an AI-powered platform that h
 
 ## 🔥 Live Demo
 
-🌐 **Try it now** → [hackyours.raghavkatta.xyz](https://hackyours.raghavkatta.xyz)  
-💻 **GitHub Repo** → [github.com/raghavxkatta/HackYours-BinaryBrains](https://github.com/raghavxkatta/HackYours-BinaryBrains)
+🌐 **Try it now** → [HackFlow.raghavkatta.xyz](https://HackFlow.raghavkatta.xyz)  
+💻 **GitHub Repo** → [github.com/raghavxkatta/HackFlow-BinaryBrains](https://github.com/raghavxkatta/HackFlow-BinaryBrains)
 
 ---
 
@@ -47,8 +47,8 @@ HackYours is your ultimate hackathon assistant — an AI-powered platform that h
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/raghavxkatta/HackYours-BinaryBrains.git
-cd HackYours-BinaryBrains
+git clone https://github.com/raghavxkatta/HackFlow-BinaryBrains.git
+cd HackFlow-BinaryBrains
 2. Install Dependencies
 bash
 Copy

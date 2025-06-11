@@ -25,8 +25,8 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
-                        <img src={Logo} alt="HackYours Logo" className="h-10 mr-2 transition-all duration-300" />
-                        <span className="text-2xl font-bold text-[#01FF00] hidden sm:inline">HackYours</span>
+                        {/* <img src={Logo} alt="HackFlow Logo" className="h-10 mr-2 transition-all duration-300" /> */}
+                        <span className="text-2xl font-bold text-[#01FF00] hidden sm:inline">HackFlow</span>
                     </Link>
 
                     {/* Desktop Nav */}
