@@ -59,12 +59,12 @@ const Login = () => {
             {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    <h2 className="text-center text-3xl font-bold text-[#01FF00]">
+                    <h2 className="text-center text-3xl font-bold text-[#FFD700]">
                         Login to HackFlow
                     </h2>
                     <p className="mt-2 text-center text-sm text-white/60">
                         Or{' '}
-                        <Link to="/signup" className="text-[#01FF00] hover:text-[#01FF00]/80 cursor-pointer">
+                        <Link to="/signup" className="text-[#FFD700] hover:text-[#FFD700]/80 cursor-pointer">
                             create a new account
                         </Link>
                     </p>
@@ -87,7 +87,7 @@ const Login = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00] focus:ring-1 focus:ring-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-text"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-text"
                                 placeholder="Email address"
                             />
                         </div>
@@ -101,13 +101,13 @@ const Login = () => {
                                 value={formData.password}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00] focus:ring-1 focus:ring-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-text"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-text"
                                 placeholder="Password"
                             />
                             <button
                                 type="button"
                                 onClick={() => setShowPassword(prev => !prev)}
-                                className="absolute inset-y-0 right-3 flex items-center text-[#01FF00]/70 hover:text-[#01FF00] focus:outline-none cursor-pointer"
+                                className="absolute inset-y-0 right-3 flex items-center text-[#FFD700]/70 hover:text-[#FFD700] focus:outline-none cursor-pointer"
                                 tabIndex={-1}
                             >
                                 {showPassword ? <FiEyeOff className="w-5 h-5" /> : <FiEye className="w-5 h-5" />}
@@ -121,9 +121,9 @@ const Login = () => {
                                 id="remember-me"
                                 name="remember-me"
                                 type="checkbox"
-                                className="h-4 w-4 text-[#01FF00] border-2 border-[#01FF00]/40 bg-black rounded focus:ring-[#01FF00] cursor-pointer"
+                                className="h-4 w-4 text-[#FFD700] border-2 border-[#FFD700]/40 bg-black rounded focus:ring-[#FFD700] cursor-pointer"
                             />
-                            <label htmlFor="remember-me" className="ml-2 block text-sm text-[#01FF00]/80 group-hover:text-[#01FF00] cursor-pointer">
+                            <label htmlFor="remember-me" className="ml-2 block text-sm text-[#FFD700]/80 group-hover:text-[#FFD700] cursor-pointer">
                                 Remember me
                             </label>
                         </div>
@@ -131,7 +131,7 @@ const Login = () => {
                         <div className="text-sm">
                             <Link 
                                 to="/forgot-password" 
-                                className="text-[#01FF00] hover:text-[#01FF00]/80 cursor-pointer hover:underline"
+                                className="text-[#FFD700] hover:text-[#FFD700]/80 cursor-pointer hover:underline"
                             >
                                 Forgot password?
                             </Link>
@@ -141,7 +141,7 @@ const Login = () => {
                     <div>
                         <button
                             type="submit"
-                            className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#01FF00] hover:bg-[#01FF00]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#01FF00]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                            className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#FFD700] hover:bg-[#FFD700]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                         >
                             Sign in
                         </button>
@@ -154,7 +154,7 @@ const Login = () => {
                     <button
                         onClick={handleGoogleLogin}
                         type="button"
-                        className="group relative w-full flex justify-center items-center py-3 px-4 border-2 border-[#01FF00]/40 rounded-lg text-[#01FF00] hover:bg-[#01FF00]/10 focus:outline-none transition-all duration-300 hover:shadow-md hover:shadow-[#01FF00]/30 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                        className="group relative w-full flex justify-center items-center py-3 px-4 border-2 border-[#FFD700]/40 rounded-lg text-[#FFD700] hover:bg-[#FFD700]/10 focus:outline-none transition-all duration-300 hover:shadow-md hover:shadow-[#FFD700]/30 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                     >
                         <FcGoogle className="mr-2 text-xl" />
                         Sign in with Google

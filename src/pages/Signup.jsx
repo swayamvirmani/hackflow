@@ -80,12 +80,12 @@ const Signup = () => {
         <div className="min-h-screen bg-black flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    <h2 className="text-center text-3xl font-bold text-[#01FF00]">
+                    <h2 className="text-center text-3xl font-bold text-[#FFD700]">
                         Create your account
                     </h2>
                     <p className="mt-2 text-center text-sm text-white/60">
                         Already have an account?{' '}
-                        <Link to="/login" className="text-[#01FF00] hover:text-[#01FF00]/80 cursor-pointer">
+                        <Link to="/login" className="text-[#FFD700] hover:text-[#FFD700]/80 cursor-pointer">
                             Sign in
                         </Link>
                     </p>
@@ -108,7 +108,7 @@ const Signup = () => {
                                 value={formData.name}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00]"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700]"
                                 placeholder="Full Name"
                             />
                         </div>
@@ -122,7 +122,7 @@ const Signup = () => {
                                 value={formData.email}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00]"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700]"
                                 placeholder="Email address"
                             />
                         </div>
@@ -137,7 +137,7 @@ const Signup = () => {
                                 value={formData.password}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00]"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700]"
                                 placeholder="Password"
                             />
                            
@@ -145,7 +145,7 @@ const Signup = () => {
                             <button
                                 type="button"
                                 onClick={() => setShowPassword(prev => !prev)}
-                                className="absolute inset-y-0 right-3 flex items-center text-[#01FF00]/70 hover:text-[#01FF00]"
+                                className="absolute inset-y-0 right-3 flex items-center text-[#FFD700]/70 hover:text-[#FFD700]"
                                 tabIndex={-1}
                             >
                                 {showPassword ? <FiEyeOff className="w-5 h-5" /> : <FiEye className="w-5 h-5" />}
@@ -162,13 +162,13 @@ const Signup = () => {
                                 value={formData.confirmPassword}
                                 onChange={handleChange}
                                 required
-                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00]"
+                                className="appearance-none rounded-lg relative block w-full px-3 py-2 pr-10 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700]"
                                 placeholder="Confirm Password"
                             />
                             <button
                                 type="button"
                                 onClick={() => setShowConfirmPassword(prev => !prev)}
-                                className="absolute inset-y-0 right-3 flex items-center text-[#01FF00]/70 hover:text-[#01FF00]"
+                                className="absolute inset-y-0 right-3 flex items-center text-[#FFD700]/70 hover:text-[#FFD700]"
                                 tabIndex={-1}
                             >
                                 {showConfirmPassword ? <FiEyeOff className="w-5 h-5" /> : <FiEye className="w-5 h-5" />}
@@ -179,7 +179,7 @@ const Signup = () => {
                     <div>
                         <button
                             type="submit"
-                            className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#01FF00] hover:bg-[#01FF00]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#01FF00]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                            className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#FFD700] hover:bg-[#FFD700]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                         >
                             Create Account
                         </button>
@@ -191,7 +191,7 @@ const Signup = () => {
                     <button
                         onClick={handleGoogleLogin}
                         type="button"
-                        className="group relative w-full flex justify-center items-center py-3 px-4 border-2 border-[#01FF00]/40 rounded-lg text-[#01FF00] hover:bg-[#01FF00]/10 focus:outline-none transition-all duration-300 hover:shadow-md hover:shadow-[#01FF00]/30 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                        className="group relative w-full flex justify-center items-center py-3 px-4 border-2 border-[#FFD700]/40 rounded-lg text-[#FFD700] hover:bg-[#FFD700]/10 focus:outline-none transition-all duration-300 hover:shadow-md hover:shadow-[#FFD700]/30 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                     >
                         <FcGoogle className="mr-2 text-xl" />
                         Sign up with Google

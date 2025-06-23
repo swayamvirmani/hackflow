@@ -42,24 +42,24 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="py-20 bg-black">
+        <section className="py-20 bg-gradient-to-b from-secondary-100 to-primary-50 font-sans">
             <div className="max-w-3xl mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center mb-12 text-[#01FF00]">
+                <h2 className="text-3xl font-bold text-center mb-12 text-primary-700">
                     Common Questions
                 </h2>
 
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
-                        <div key={index} className="border-2 border-[#01FF00]/20 rounded-lg overflow-hidden hover:border-[#01FF00]/40 transition-all duration-300">
+                        <div key={index} className="border-2 border-primary-200/40 rounded-lg overflow-hidden hover:border-primary-700 transition-all duration-300 bg-white/80">
                             <button
-                                className="w-full p-4 text-left bg-black hover:bg-[#01FF00]/10 transition-all duration-300 flex justify-between items-center cursor-pointer group"
+                                className="w-full p-4 text-left bg-white/60 hover:bg-primary-200/10 transition-all duration-300 flex justify-between items-center cursor-pointer group"
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                             >
-                                <span className="font-medium text-white group-hover:text-[#01FF00] transition-colors">{faq.question}</span>
+                                <span className="font-medium text-primary-900 group-hover:text-primary-700 transition-colors">{faq.question}</span>
                                 {openIndex === index ? (
-                                    <FiChevronUp className="w-5 h-5 text-[#01FF00] transform transition-transform duration-300" />
+                                    <FiChevronUp className="w-5 h-5 text-primary-700 transform transition-transform duration-300" />
                                 ) : (
-                                    <FiChevronDown className="w-5 h-5 text-[#01FF00] transform transition-transform duration-300" />
+                                    <FiChevronDown className="w-5 h-5 text-primary-700 transform transition-transform duration-300" />
                                 )}
                             </button>
 
@@ -71,9 +71,9 @@ const FAQ = () => {
                                         animate={{ opacity: 1, height: "auto" }}
                                         exit={{ opacity: 0, height: 0 }}
                                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                                        className="bg-black border-t border-[#01FF00]/20 overflow-hidden"
+                                        className="bg-white/50 border-t border-primary-200/40 overflow-hidden"
                                     >
-                                        <div className="p-4 text-white/70">{faq.answer}</div>
+                                        <div className="p-4 text-primary-900/70">{faq.answer}</div>
                                     </motion.div>
                                 )}
                             </AnimatePresence>

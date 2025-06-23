@@ -67,7 +67,6 @@ Requirements:
             setToast({ message: 'Failed to save pitch', type: 'error' });
         }
     };
-    
 
     const handleCopyPitch = () => {
         navigator.clipboard.writeText(pitch);
@@ -77,24 +76,24 @@ Requirements:
     };
 
     return (
-        <div className="border-2 border-[#01FF00]/20 rounded-xl p-6 hover:border-[#01FF00]/40 transition-all duration-300">
+        <div className="border-2 border-[#FFD700]/20 rounded-xl p-6 hover:border-[#FFD700]/40 transition-all duration-300">
             {toast && (
-                <Toast 
-                    message={toast.message} 
-                    type={toast.type} 
-                    onClose={() => setToast(null)} 
+                <Toast
+                    message={toast.message}
+                    type={toast.type}
+                    onClose={() => setToast(null)}
                 />
             )}
 
-            <h2 className="text-2xl font-bold text-[#01FF00] mb-8"> Generate Project Pitch</h2>
+            <h2 className="text-2xl font-bold text-[#FFD700] mb-8">Generate Project Pitch</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 <div>
-                    <label className="block text-[#01FF00] text-sm font-medium mb-2">Tone</label>
+                    <label className="block text-[#FFD700] text-sm font-medium mb-2">Tone</label>
                     <select
                         value={tone}
                         onChange={(e) => setTone(e.target.value)}
-                        className="w-full p-3 bg-black border-2 border-[#01FF00]/40 rounded-lg text-white focus:border-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-pointer"
+                        className="w-full p-3 bg-black border-2 border-[#FFD700]/40 rounded-lg text-white focus:border-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-pointer"
                     >
                         <option>Storytelling</option>
                         <option>Formal</option>
@@ -104,11 +103,11 @@ Requirements:
                 </div>
 
                 <div>
-                    <label className="block text-[#01FF00] text-sm font-medium mb-2">Duration</label>
+                    <label className="block text-[#FFD700] text-sm font-medium mb-2">Duration</label>
                     <select
                         value={duration}
                         onChange={(e) => setDuration(e.target.value)}
-                        className="w-full p-3 bg-black border-2 border-[#01FF00]/40 rounded-lg text-white focus:border-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-pointer"
+                        className="w-full p-3 bg-black border-2 border-[#FFD700]/40 rounded-lg text-white focus:border-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-pointer"
                     >
                         <option>30 Seconds</option>
                         <option>1 Minute</option>
@@ -117,11 +116,11 @@ Requirements:
                 </div>
 
                 <div>
-                    <label className="block text-[#01FF00] text-sm font-medium mb-2">Language</label>
+                    <label className="block text-[#FFD700] text-sm font-medium mb-2">Language</label>
                     <select
                         value={language}
                         onChange={(e) => setLanguage(e.target.value)}
-                        className="w-full p-3 bg-black border-2 border-[#01FF00]/40 rounded-lg text-white focus:border-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-pointer"
+                        className="w-full p-3 bg-black border-2 border-[#FFD700]/40 rounded-lg text-white focus:border-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-pointer"
                     >
                         <option>English</option>
                         <option>Hindi</option>
@@ -133,29 +132,29 @@ Requirements:
             <button
                 onClick={generatePitch}
                 disabled={loading}
-                className="w-full py-4 bg-[#01FF00] text-black font-bold rounded-lg hover:opacity-90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-[#01FF00]/20 transform hover:scale-[1.02] active:scale-[0.98]"
+                className="w-full py-4 bg-[#FFD700] text-black font-bold rounded-lg hover:opacity-90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-[#FFD700]/20 transform hover:scale-[1.02] active:scale-[0.98]"
             >
-                {loading ? "Crafting Your Pitch..." : "Generate Custom Pitch "}
+                {loading ? "Crafting Your Pitch..." : "Generate Custom Pitch"}
             </button>
 
             {loading && (
                 <div className="mt-8 text-center">
-                    <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-[#01FF00] border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
-                    <p className="mt-2 text-[#01FF00]">Crafting your perfect pitch...</p>
+                    <div className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-[#FFD700] border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]"></div>
+                    <p className="mt-2 text-[#FFD700]">Crafting your perfect pitch...</p>
                 </div>
             )}
 
             {pitch && (
-                <div className="mt-8 border-2 border-[#01FF00]/40 rounded-lg p-6 hover:border-[#01FF00]/60 transition-all duration-300">
-                    <h3 className="text-xl font-semibold text-[#01FF00] mb-4">Your Generated Pitch:</h3>
-                    <div className="whitespace-pre-wrap text-white/90">{pitch}</div>
+                <div className="mt-8 border-2 border-[#FFD700]/40 rounded-lg p-6 bg-white hover:border-[#FFD700]/60 transition-all duration-300">
+                    <h3 className="text-xl font-semibold text-[#FFD700] mb-4">Your Generated Pitch:</h3>
+                    <div className="whitespace-pre-wrap text-black">{pitch}</div>
                     <div className="mt-6 flex justify-end gap-4">
                         <button
                             onClick={handleSavePitch}
                             className={`px-4 py-2 text-sm border rounded-lg transition-all duration-300 flex items-center gap-2 ${
-                                isSaved 
-                                    ? 'bg-[#01FF00] text-black border-transparent' 
-                                    : 'text-[#01FF00] border-[#01FF00] hover:bg-[#01FF00]/10'
+                                isSaved
+                                    ? 'bg-[#FFD700] text-black border-transparent'
+                                    : 'text-[#FFD700] border-[#FFD700] hover:bg-[#FFD700]/10'
                             }`}
                         >
                             <FiSave className="w-4 h-4" />
@@ -163,7 +162,7 @@ Requirements:
                         </button>
                         <button
                             onClick={handleCopyPitch}
-                            className="px-4 py-2 text-sm text-[#01FF00] border border-[#01FF00] rounded-lg hover:bg-[#01FF00]/10 transition-all duration-300 flex items-center gap-2"
+                            className="px-4 py-2 text-sm text-[#FFD700] border border-[#FFD700] rounded-lg hover:bg-[#FFD700]/10 transition-all duration-300 flex items-center gap-2"
                         >
                             {isCopied ? (
                                 <>

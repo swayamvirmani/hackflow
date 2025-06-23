@@ -4,7 +4,7 @@ import ideaImage from '../assets/Compute12.gif/Computer.gif';
 
 const Hero = () => {
     return (
-        <section className="bg-black min-h-[90vh]">
+        <section className="bg-hero-gradient min-h-[90vh] font-sans">
             <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
@@ -19,13 +19,13 @@ const Hero = () => {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="text-5xl lg:text-6xl font-bold"
+                            className="text-5xl lg:text-6xl font-bold text-primary-900 drop-shadow"
                         >
                             <span className="text-white">Generate Your Next</span>
                             <span
-                                className="block animate-pulse text-[#01FF00] mt-2 font-bold"
+                                className="block animate-pulse text-primary-700 mt-2 font-bold drop-shadow"
                                 style={{
-                                    textShadow: '0 0 8px #01FF00',
+                                    textShadow: '0 0 8px #FFD700',
                                 }}
                             >
                                 Hackathon Idea
@@ -37,7 +37,7 @@ const Hero = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="mt-6 text-lg text-white/80"
+                            className="mt-6 text-lg text-primary-900/80"
                         >
                             HackFlow is an AI-powered hackathon idea generator built for developers. Whether you're prepping for a student hackathon, company sprint, or solo project, HackFlow delivers theme-based prompts to spark original, winning ideas — instantly.
 
@@ -53,11 +53,11 @@ const Hero = () => {
                         >
                             <Link
                                 to="/ideaGenerator"
-                                className="px-8 py-4 bg-[#01FF00] text-black font-bold text-lg rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 cursor-pointer hover:shadow-lg hover:shadow-[#01FF00]/20"
+                                className="px-8 py-4 bg-primary-200 text-primary-900 font-bold text-lg rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105 cursor-pointer hover:shadow-lg hover:shadow-primary-200/20"
                             >
                                 <span className=" tracking-wide">Generate Ideas →</span>
                             </Link>
-                            <button className="px-8 py-4 bg-transparent text-[#01FF00] font-semibold text-lg border-2 border-[#01FF00] rounded-lg hover:bg-[#01FF00]/10 hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#01FF00]/20">
+                            <button className="px-8 py-4 bg-transparent text-primary-700 font-semibold text-lg border-2 border-primary-200 rounded-lg hover:bg-primary-200/10 hover:text-primary-900 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-200/20">
                                 <span className=" tracking-wide">Learn More</span>
                             </button>
                         </motion.div>

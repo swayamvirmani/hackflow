@@ -31,12 +31,12 @@ const ForgotPassword = () => {
         <div className="min-h-screen bg-black flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    <h2 className="text-center text-3xl font-bold text-[#01FF00]">
+                    <h2 className="text-center text-3xl font-bold text-[#FFD700]">
                         Reset Password
                     </h2>
                     <p className="mt-2 text-center text-sm text-white/60">
                         Remember your password?{' '}
-                        <Link to="/login" className="text-[#01FF00] hover:text-[#01FF00]/80 cursor-pointer">
+                        <Link to="/login" className="text-[#FFD700] hover:text-[#FFD700]/80 cursor-pointer">
                             Sign in
                         </Link>
                     </p>
@@ -60,14 +60,14 @@ const ForgotPassword = () => {
                             required
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#01FF00]/40 bg-black text-white placeholder-[#01FF00]/50 focus:outline-none focus:border-[#01FF00] focus:ring-1 focus:ring-[#01FF00] hover:border-[#01FF00]/60 transition-all duration-300 cursor-text"
+                            className="appearance-none rounded-lg relative block w-full px-3 py-2 border-2 border-[#FFD700]/40 bg-black text-white placeholder-[#FFD700]/50 focus:outline-none focus:border-[#FFD700] focus:ring-1 focus:ring-[#FFD700] hover:border-[#FFD700]/60 transition-all duration-300 cursor-text"
                             placeholder="Enter your email address"
                         />
                     </div>
 
                     <button
                         type="submit"
-                        className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#01FF00] hover:bg-[#01FF00]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#01FF00]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+                        className="group relative w-full flex justify-center py-3 px-4 border-2 border-transparent rounded-lg text-black bg-[#FFD700] hover:bg-[#FFD700]/90 focus:outline-none transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/20 transform hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
                     >
                         Send Reset Link
                     </button>

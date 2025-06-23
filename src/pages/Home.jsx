@@ -6,13 +6,13 @@ import SmoothScroll from '../components/LensisScroll';
 
 const Separator = () => (
     <div className="w-full max-w-7xl mx-auto px-6">
-        <div className="h-px bg-[#01FF00]/20"></div>
+        <div className="h-px bg-[#FFD700]/20"></div>
     </div>
 );
 
 const Home = () => {
     return (
-        <main className="bg-black min-h-screen">
+        <main className="min-h-screen font-sans">
             <SmoothScroll>
             <Hero />
             <Separator />

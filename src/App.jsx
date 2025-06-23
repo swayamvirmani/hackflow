@@ -26,7 +26,7 @@ function AppContent() {
   }, [user]);
 
   return (
-    <div className="min-h-screen bg-black flex flex-col">
+    <div className="min-h-screen flex flex-col bg-transparent">
       <Navbar />
       {showWelcome && <Welcome onClose={() => setShowWelcome(false)} />}
       <Routes>

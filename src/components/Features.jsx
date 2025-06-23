@@ -70,11 +70,11 @@ const card = {
 
 const Features = () => {
     return (
-        <section className="bg-black py-12 md:py-20">
+        <section className="bg-gradient-to-b from-primary-50 to-secondary-100 py-12 md:py-20 font-sans">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-10 md:mb-16">
-                    <h2 className="text-2xl md:text-3xl font-bold text-[#01FF00]">Key Features</h2>
-                    <p className="mt-3 md:mt-4 text-base md:text-lg text-white/80">
+                    <h2 className="text-2xl md:text-3xl font-bold text-primary-700">Key Features</h2>
+                    <p className="mt-3 md:mt-4 text-base md:text-lg text-primary-900/80">
                         Powerful tools to enhance your hackathon experience
                     </p>
                 </div>
@@ -90,7 +90,7 @@ const Features = () => {
                         <motion.div
                             key={index}
                             variants={card}
-                            className={`p-4 md:p-6 bg-black border-2 border-[#01FF00]/20 rounded-lg cursor-pointer hover:border-[#01FF00] transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-[#01FF00]/20 ${index >= 4 ? 'hidden lg:block' : ''}`}
+                            className={`p-4 md:p-6 bg-white/80 border-2 border-primary-200/40 rounded-lg cursor-pointer hover:border-primary-700 transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary-200/20 ${index >= 4 ? 'hidden lg:block' : ''}`}
                             whileHover={{ 
                                 scale: 1.05, 
                                 rotate: [0, 1, -1, 0], 
@@ -98,10 +98,10 @@ const Features = () => {
                             }}
                         >
                             <div className="flex items-center gap-3 group">
-                                <div className="text-[#01FF00] group-hover:scale-110 transition-transform duration-300">{feature.icon}</div>
-                                <h3 className="text-lg md:text-xl font-semibold text-white group-hover:text-[#01FF00] transition-colors">{feature.title}</h3>
+                                <div className="text-primary-700 group-hover:scale-110 transition-transform duration-300">{feature.icon}</div>
+                                <h3 className="text-lg md:text-xl font-semibold text-primary-900 group-hover:text-primary-700 transition-colors">{feature.title}</h3>
                             </div>
-                            <p className="text-sm md:text-base text-white/70 mt-2 group-hover:text-white/90 transition-colors">{feature.description}</p>
+                            <p className="text-sm md:text-base text-primary-900/70 mt-2 group-hover:text-primary-900 transition-colors">{feature.description}</p>
                         </motion.div>
                     ))}
                 </motion.div>

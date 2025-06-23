@@ -20,13 +20,13 @@ const Navbar = () => {
     const toggleMobileMenu = () => setMobileMenuOpen(prev => !prev);
 
     return (
-        <nav className="bg-black/90 backdrop-blur-md border-b border-[#01FF00]/20 sticky top-0 z-50">
+        <nav className="bg-hero-gradient bg-gradient-to-r from-primary-500 to-secondary-300 shadow-lg border-b border-primary-200/40 sticky top-0 z-50 font-sans">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center">
                         {/* <img src={Logo} alt="HackFlow Logo" className="h-10 mr-2 transition-all duration-300" /> */}
-                        <span className="text-2xl font-bold text-[#01FF00] hidden sm:inline">HackFlow</span>
+                        <span className="text-2xl font-bold text-primary-700 drop-shadow hidden sm:inline">HackFlow</span>
                     </Link>
 
                     {/* Desktop Nav */}
@@ -36,7 +36,7 @@ const Navbar = () => {
                                 <motion.div whileHover={{ scale: 1.1 }}>
                                     <Link
                                         to="/ideaGenerator"
-                                        className="text-lg font-semibold text-[#01FF00] hover:text-white transition-all duration-300"
+                                        className="text-lg font-semibold text-primary-700 hover:text-primary-900 transition-all duration-300"
                                     >
                                         Generate Ideas
                                     </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
                                 <motion.div whileHover={{ scale: 1.1 }}>
                                     <Link
                                         to="/pitchGenerator"
-                                        className="text-lg font-semibold text-[#01FF00] hover:text-white transition-all duration-300"
+                                        className="text-lg font-semibold text-primary-700 hover:text-primary-900 transition-all duration-300"
                                     >
                                         Generate Pitch
                                     </Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
                                 <motion.div whileHover={{ scale: 1.1 }}>
                                     <Link
                                         to="/my-ideas"
-                                        className="text-lg font-semibold text-[#01FF00] hover:text-white transition-all duration-300"
+                                        className="text-lg font-semibold text-primary-700 hover:text-primary-900 transition-all duration-300"
                                     >
                                         My Ideas
                                     </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     onClick={handleLogout}
-                                    className="ml-4 px-4 py-2 border-2 border-[#01FF00] text-[#01FF00] rounded-lg hover:bg-[#01FF00]/40 cursor-pointer hover:text-white transition-all"
+                                    className="ml-4 px-4 py-2 border-2 border-primary-200 text-primary-700 rounded-lg hover:bg-primary-200/40 cursor-pointer hover:text-primary-900 transition-all"
                                 >
                                     Logout
                                 </motion.button>
@@ -69,13 +69,13 @@ const Navbar = () => {
                             <>
                                 <Link
                                     to="/login"
-                                    className="px-4 py-2 border-2 border-[#01FF00] text-[#01FF00] rounded-lg hover:bg-[#01FF00]/10 transition-all duration-300 hover:scale-105"
+                                    className="px-4 py-2 border-2 border-primary-200 text-primary-700 rounded-lg hover:bg-primary-200/10 transition-all duration-300 hover:scale-105"
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     to="/signup"
-                                    className="px-4 py-2 bg-[#01FF00] text-black font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105"
+                                    className="px-4 py-2 bg-primary-200 text-primary-700 font-semibold rounded-lg hover:opacity-90 transition-all duration-300 hover:scale-105"
                                 >
                                     Sign Up
                                 </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
                     {/* Mobile Icon */}
                     {user && (
                         <motion.button
-                            className="lg:hidden cursor-pointer text-[#01FF00] text-2xl"
+                            className="lg:hidden cursor-pointer text-primary-700 text-2xl"
                             onClick={toggleMobileMenu}
                             initial={{ rotate: 0 }}
                             animate={{ rotate: mobileMenuOpen ? 45 : 0 }}
@@ -107,12 +107,12 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className="lg:hidden px-4 pt-4 pb-6 space-y-5 bg-black border-t border-[#01FF00]/20 shadow-lg z-40"
+                        className="lg:hidden px-4 pt-4 pb-6 space-y-5 bg-black border-t border-primary-200/40 shadow-lg z-40"
                     >
                         <Link
                             to="/ideaGenerator"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block w-full text-center text-2xl font-semibold text-[#01FF00] py-2 rounded-lg border border-[#01FF00]/20 bg-[#01FF00]/5 hover:bg-[#01FF00]/10 hover:shadow-[0_0_10px_#01FF00] transition-all"
+                            className="block w-full text-center text-2xl font-semibold text-primary-700 py-2 rounded-lg border border-primary-200/40 bg-primary-200/5 hover:bg-primary-200/10 hover:shadow-[0_0_10px_#FFD700] transition-all"
                         >
                             Generate Ideas
                         </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
                         <Link
                             to="/pitchGenerator"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block w-full text-center text-2xl font-semibold text-[#01FF00] py-2 rounded-lg border border-[#01FF00]/20 bg-[#01FF00]/5 hover:bg-[#01FF00]/10 hover:shadow-[0_0_10px_#01FF00] transition-all"
+                            className="block w-full text-center text-2xl font-semibold text-primary-700 py-2 rounded-lg border border-primary-200/40 bg-primary-200/5 hover:bg-primary-200/10 hover:shadow-[0_0_10px_#FFD700] transition-all"
                         >
                             Generate Pitch
                         </Link>
@@ -128,7 +128,7 @@ const Navbar = () => {
                         <Link
                             to="/my-ideas"
                             onClick={() => setMobileMenuOpen(false)}
-                            className="block w-full text-center text-2xl font-semibold text-[#01FF00] py-2 rounded-lg border border-[#01FF00]/20 bg-[#01FF00]/5 hover:bg-[#01FF00]/10 hover:shadow-[0_0_10px_#01FF00] transition-all"
+                            className="block w-full text-center text-2xl font-semibold text-primary-700 py-2 rounded-lg border border-primary-200/40 bg-primary-200/5 hover:bg-primary-200/10 hover:shadow-[0_0_10px_#FFD700] transition-all"
                         >
                             My Ideas
                         </Link>
@@ -138,7 +138,7 @@ const Navbar = () => {
                                 handleLogout();
                                 setMobileMenuOpen(false);
                             }}
-                            className="w-full text-center text-xl font-semibold text-[#01FF00] py-2 rounded-lg border border-[#01FF00]/30 bg-[#01FF00]/10 hover:bg-[#01FF00]/20 transition-all  hover:shadow-[0_0_10px_#01FF00]"
+                            className="w-full text-center text-xl font-semibold text-primary-700 py-2 rounded-lg border border-primary-200/30 bg-primary-200/10 hover:bg-primary-200/20 transition-all  hover:shadow-[0_0_10px_#FFD700]"
                         >
                             Logout
                         </button>

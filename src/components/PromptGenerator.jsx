@@ -26,15 +26,15 @@ The output should be accurate enough to recreate the project completely.`;
     };
 
     return (
-        <div className="mt-8">
-            <div className="p-6 bg-black border-2 border-[#01FF00]/40 rounded-lg hover:border-[#01FF00]/60 hover:shadow-[0_0_15px_#01FF00] transition-all duration-300">
+        <div className="mt-8 font-sans">
+            <div className="p-6 bg-white border-2 border-primary-200/40 rounded-lg hover:border-primary-700/60 hover:shadow-[0_0_15px_#ffb84d] transition-all duration-300">
                 <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-xl font-semibold text-[#01FF00] cursor-default">
+                    <h3 className="text-xl font-semibold text-primary-700 cursor-default">
                         🧠 Build Prompt for GPT
                     </h3>
                     <button
                         onClick={handleCopy}
-                        className="flex items-center gap-2 px-4 py-2 text-sm text-[#01FF00] border cursor-pointer border-[#01FF00] rounded-lg hover:bg-[#01FF00]/10 transition-all duration-300"
+                        className="flex items-center gap-2 px-4 py-2 text-sm text-primary-700 border cursor-pointer border-primary-700 rounded-lg hover:bg-primary-200/10 transition-all duration-300"
                     >
                         {copied ? (
                             <>
@@ -49,7 +49,7 @@ The output should be accurate enough to recreate the project completely.`;
                         )}
                     </button>
                 </div>
-                <div className="bg-[#01FF00]/5 p-4 rounded-lg border border-[#01FF00]/20 text-white text-sm whitespace-pre-wrap">
+                <div className="bg-primary-200/10 p-4 rounded-lg border border-primary-200/40 text-primary-900 text-sm whitespace-pre-wrap">
                     {buildPrompt()}
                 </div>
             </div>
